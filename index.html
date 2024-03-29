@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+</head>
+<body>
+    <section class="sectionForm">
+        <br name="myForm">
+            <label for="firstName" class="form_label">Name:</label>
+            <input type="text" id="firstName" name="firstName" class="form_input" placeholder="Enter your name" required/>
+            <br/>
+
+            <label for="email" class="form__label">Email:</label>
+			<input type="email" id="email" name="email" class="form_input" placeholder="Enter your Email" required/>
+			<br />
+
+            <label for="age" class="form__label">Age:</label>
+            <input type="number" id="age" name="age" class="form_input" placeholder="Enter your age" required/><br/>
+
+            <label for="gender" class="form__label">Gender:</label></br>
+			<input type="radio" id="genderMale" name="gender" class="form_input"/>
+            <label for="gender_Male" class="form__label">Male</label>
+			<br/>
+			<input type="radio" id="genderFemale" name="gender" class="form_input"/>
+            <label for="gender_Female" class="form__label">Female</label>
+			<br/>
+
+            <label for="selectProfession" class="form__label">Profession:</label>
+            <select id="select" name="select" class="form__select" required>
+                <option value="Doctor">Doctor</option>
+                <option value="Programmer">Programmer</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Designer">Designer</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Salesperson">Salesperson</option>
+                <option value="Other">Other..</option>
+            </select>
+            <br />
+
+            <label for="password" class="form__label">Password:</label>
+            <input type="password" id="password" name="password" class="form_input" placeholder="Enter password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$" required/><br/>
+
+            <label for="agreement" class="form__label">I agree to data processing</label>
+            <input type="checkbox" id="checkbox" name="checkbox" class="form_input" required/><br>
+
+            <input type="submit" name="button" value="Submit" class="form__submit " />
+        </form>
+    </section>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>
