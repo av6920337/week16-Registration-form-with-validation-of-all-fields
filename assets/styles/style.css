@@ -14,8 +14,12 @@ body {
     flex-flow: column nowrap;
     align-items: center;
 }
-/* .formInfo2{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-} */
+.label_genderMale{
+    margin-right: 21px;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    /* margin-top: 5px; */
+    display: none;
+}
