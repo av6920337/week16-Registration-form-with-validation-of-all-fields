@@ -12,31 +12,31 @@
         <form name="myForm" class="myForm">
         <div class="formInfo form">
             <label for="userName" class="form_label">Name:</label>
-            <input type="text" id="userName" name="userName" class="form_input" placeholder="Enter your name" required/>
+            <input type="text" id="userName" name="userName" class="form_input" placeholder="Enter your name"  required/>
             <span class="error-message" id="userNameError"></span>
             <br/>
             <label for="email" class="form__label">Email Address:</label>
-            <input type="email" id="email" name="email" class="form_input" placeholder="Enter your Email" required/>
+            <input type="email" id="email" name="email" class="form_input" placeholder="Enter your Email"  required/>
             <span class="error-message" id="emailError"></span>
             <br />
             <label for="age" class="form__label">Age:</label>
-            <input type="number" id="age" name="age" class="form_input" placeholder="Enter your age" required/>
+            <input type="number" id="age" name="age" class="form_input" placeholder="Enter your age"  required/>
             <span class="error-message" id="ageError"></span>
             <br/>
             <label for="password" class="form__label">Password:</label>
-            <input type="password" id="password" name="password" class="form_input" placeholder="Enter password" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$" required/>
+            <input type="password" id="password" name="password" class="form_input" placeholder="Enter password" minlength="8" required />
             <span class="error-message" id="passwordError"></span>
             <br/>
             <label for="gender" class="form__label">Your Gender:</label>
             <label for="gender_Male" class="form__label label_genderMale">
-                <input type="radio" id="genderMale" name="gender" class="form_input"/>Male
+                <input type="radio" id="genderMale" name="gender" value="male" class="form_input" />Male
             </label>
             <label for="gender_Female" class="form__label">
-                <input type="radio" id="genderFemale" name="gender" class="form_input"/>Female
+                <input type="radio" id="genderFemale" name="gender" value="female" class="form_input" />Female
             </label>
             <br/>
             <label for="selectProfession" class="form__label">Profession:</label>
-            <select id="select" name="profession" class="form__select" required>
+            <select id="select" name="profession" class="form__select"  required>
                 <option value="Doctor">Doctor</option>
                 <option value="Programmer">Programmer</option>
                 <option value="Teacher">Teacher</option>
@@ -48,12 +48,12 @@
             <span class="error-message" id="professionError"></span>
             <br /> 
             <label for="agreement" class="form__label">
-                <input type="checkbox" id="checkbox" name="agreementCheckbox" class="form_input" required/>I agree to data processing
+                <input type="checkbox" id="checkbox" name="agreementCheckbox" class="form_input checkbox"  required/>I agree to data processing
             </label>
             <span class="error-message" id="agreementError"></span>
             <br>
         </div>
-            <input type="submit" name="button" value="Submit" class="form__submit " />
+            <input type="submit" name="submit" value="submit" class="form__submit btn" id="formSubmit" disabled/>
         </form>
     </section>
     <script src="assets/scripts/index.js"></script>

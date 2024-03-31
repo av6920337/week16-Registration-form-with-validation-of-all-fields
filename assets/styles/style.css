@@ -20,6 +20,12 @@ body {
 .error-message {
     color: red;
     font-size: 14px;
-    /* margin-top: 5px; */
+    margin-top: 5px;
     display: none;
+}
+.btn{
+    opacity:0.5;
+    border: 2px solid black;
+    cursor: not-allowed;
+    display: block;
 }
